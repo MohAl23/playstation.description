@@ -1,0 +1,124 @@
+header{
+grid-area: header;
+background-color: rgb(0, 0, 0);
+}
+
+main{
+    grid-area: main;
+    background-color: rgba(0, 204, 255, 0.5);
+}
+
+section{
+    grid-area: section;
+    background-color: rgb(157, 0, 255);
+}
+
+footer{
+    grid-area: footer;
+    background-color: rgb(174, 0, 255);
+}
+
+body{
+display:grid;
+grid-template-areas: 
+'header header header header header'
+'main main main . section'
+'main main main . section'
+'footer footer footer footer footer';
+background-color:rgb(191, 87, 87)
+
+;
+grid-template-columns: 22.5% 22.5% 22.5% 10% 22.5%;
+grid-template-rows: 10% 40% 40% 10%;
+gap: 1% 1%;
+height: 600px; 
+}
+
+.custom-link {
+    color: rgb(255, 255, 255); /* Default color */
+    font-size: 16px; /* Default font size */
+    text-decoration: none; /* Remove underline */
+    margin-right: 20px; /* Add spacing between links */
+}
+
+.custom-link:hover {
+    color: red; /* Color on hover */
+    
+}
+
+.ps5{
+    color: rgb(255, 0, 0);
+    text-align: center;
+    font-size: larger;
+    font-weight: 700;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+
+}
+
+img{
+    display: block;
+    width: 200px;
+    margin-left: auto;
+  margin-right: auto;
+  margin-top: 40;
+  border: solid blue;
+
+}
+
+
+
+
+main{
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+    box-shadow: 30px 30px 1000px -20px blue inset;
+}
+
+.info{
+    font-size: x-large;
+    font-weight: 200;
+    text-shadow: 2px 2px 1px green;
+}
+
+.controller{
+    font-size: large;
+    font-weight: 200;
+    text-shadow: 2px 2px 1px rgb(128, 0, 0);
+    color: aliceblue;
+}
+
+.control{
+
+    border: solid red;
+    margin-left: 5px;
+
+}
+
+.info2{
+    color: antiquewhite;
+}
+
+.info3{
+    color: aqua;
+}
+
+.info4{
+    color: rgb(2, 246, 67);
+}
+
+
+
+
+
+@media (min-width:320px) and (max-width: 480px){
+
+    body{
+        grid-template-areas: 
+'header header header header header'
+'. main main main . '
+'. section section section .'
+'footer footer footer footer footer'
+;
+
+grid-template-columns: 5% 30% 30% 30% 5%;
+    }
+}
